@@ -1,5 +1,5 @@
 FROM python:3.6-alpine
-MAINTAINER Safonov Nikita <Safon.x@protonmail.com>
+LABEL MAINTAINER="Safonov Nikita <Safon.x@protonmail.com>"
 RUN apk add --no-cache git && \
     git clone https://github.com/screamofthepast/student-exam2 /py_app/student-exam2
 WORKDIR py_app
