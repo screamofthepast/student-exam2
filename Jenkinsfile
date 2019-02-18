@@ -17,6 +17,7 @@ pipeline {
           coverage run -m pytest
           coverage report 
           deactivate
+          pwd
           ls
         """
       }
