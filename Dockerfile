@@ -1,7 +1,7 @@
 FROM python:3.6-alpine
 LABEL MAINTAINER="Safonov Nikita <Safon.x@protonmail.com>"
 RUN ls /
-COPY /home/jenkins/student-exam2 /py_app/student-exam2/
+COPY /home/Docker-app/student-exam2 /py_app/student-exam2/
 WORKDIR /py_app/student-exam2/
 RUN pip install -e .
 CMD export FLASK_APP=js_example && \
