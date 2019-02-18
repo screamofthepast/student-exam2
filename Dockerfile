@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 LABEL MAINTAINER="Safonov Nikita <Safon.x@protonmail.com>"
-RUN ls
+RUN ls /home/
 ADD /home/Docker-app/student-exam2 /py_app/student-exam2/
 WORKDIR /py_app/student-exam2/
 RUN pip install -e .
