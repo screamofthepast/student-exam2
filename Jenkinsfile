@@ -10,15 +10,10 @@ pipeline {
     stage ('Python tests') {
       steps {
         sh """
-          python3 -m venv venv
-          . venv/bin/activate
           pip install wheel
           pip install -e '.[test]'
           coverage run -m pytest
           coverage report 
-          deactivate
-          pwd
-          ls
         """
       }
     }
